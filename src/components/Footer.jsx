@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Search, Mail, ExternalLink, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { ArrowUp, Search, Mail, ExternalLink, ShieldCheck, ArrowUpRight, Building2 } from 'lucide-react';
 import { projectInfo } from '../data/projectData';
 
 export default function Footer({ onOpenSearch }) {
@@ -64,11 +64,9 @@ export default function Footer({ onOpenSearch }) {
             </p>
 
             <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center gap-3 max-w-sm shadow-2xs">
-              <img
-                src={projectInfo.leadership.logos.cert}
-                alt="Amrita Emblem"
-                className="h-8 w-auto object-contain shrink-0"
-              />
+              <div className="w-9 h-9 rounded-xl bg-blue-50 text-[#0062ff] flex items-center justify-center shrink-0 border border-blue-100">
+                <Building2 className="w-4 h-4" />
+              </div>
               <div className="text-[11px] leading-tight text-slate-600">
                 <span className="text-[#0062ff] block text-[9px] font-mono font-bold uppercase">Academic Institution:</span>
                 <strong className="text-slate-900 font-semibold block">Amrita Vishwa Vidyapeetham</strong>
